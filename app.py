@@ -1,7 +1,7 @@
 import gradio as gr
 import whisper
 
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 def transcribe(audio):
     result = model.transcribe(audio)
